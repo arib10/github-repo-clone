@@ -1,0 +1,252 @@
+
+/* Remove margin and padding of all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-icon {
+    font-size: 24px;
+}
+
+.grey-hover :hover, nav ul li :hover {
+    color: #ccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+.overview-menu svg {
+    vertical-align: bottom;
+    fill: grey;
+}
+/* ==============
+    Header Styles..
+   ============== */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+.menu {
+    align-items: center;
+}
+header a {
+    color: #fff;
+}
+.note-nav {
+    flex: 2;
+}
+.fa.fa-github {
+    font-size: 40px;
+}
+span.big-icon {
+    cursor: pointer;
+}
+
+/* navigation bar */
+nav ul li a, nav ul li label {
+    display: block;
+    padding: 10px 0px;
+    border-top: 0.1px solid #666;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav ul li label {
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 0px;
+    border-radius: 5px;
+}
+nav ul li label input{
+    background-color: inherit;
+    border: none;
+    width: 100%;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+nav ul li label input, nav ul li label img {
+    margin: 5px;
+}
+nav ul li label input:focus +  #search-icon {
+    display: none;
+}
+nav ul li label input:focus {
+    padding: 6px;
+    background-color: #666;
+    margin: 0px;
+}
+nav ul li label input::placeholder {
+    color: #fff;
+}
+nav ul li a img, .note-nav ul li a img  {
+    width: 20px;
+    height: 20px;
+    margin: 0px 2px;
+    border-radius: 50%;
+    line-height: 2;
+}
+
+.note-nav ul li {
+    float: right;
+}
+.note-nav ul li a {
+    margin: 5px;
+}
+.fa-plus {
+    font-weight: 200;
+}
+.fa-caret-down {
+    font-size: 10px;
+}
+.smile {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 3;
+    top: 50%;
+    right: 30px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+/* profile */
+.profile-container {
+    padding: 0px 15px;
+}
+.profile {
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.profile img {
+    width: 20%;
+    height: auto;
+    margin: 0px 20px 0px 10px ;
+    border-radius: 50%;
+}
+.profile .profile-text p {
+    font-size: 22px;
+    font-weight: 200;
+}
+.bio, .profile-text p {
+    color: #555;
+}
+.set-status {
+    margin: 20px auto;
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+}
+.set-status span {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Overview Menu  */
+.overview-menu {
+    border-bottom: 1px solid #ccc;
+    overflow-x: auto;
+    margin: 30px auto 0px;
+}
+.overview-menu  li {
+    float: left;
+}
+
+.overview-menu  li a {
+    display: inline-block;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333;
+}
+.overview-menu  li :hover {
+    border-bottom: 3px solid lightgrey;
+}
+.overview-menu  li a span {
+    background-color: #ddd;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    min-width: 20px;
+    height: 20px;
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 700;
+}
+.active-menu {
+    border-bottom: 2px solid rgb(249, 130, 108);
+}
+
+/* Repository */
+.repository-container {
+    padding: 0px 10px;
+}
+
+input.set-status {
+    padding: 8px;
+    font-size: 14px;
+}
+.repository {
+    border-top: 1px solid #ccc;
+    padding: 20px 0px 15px;
+    align-items: center;
+}
+
+.repository h3 {
+    font-size: 20px;
+}
+.repository h3 a{
+    color: #0366d6;
+}
+.repository p {
+    padding: 5px 0px;
+    font-size: 14px;
+}
+p.fork, p.info {
+    font-size: 12px;
+}
+.repository button {
+    background-color: #fafbfc;
+    border: none;
+    box-shadow: 0px 0px 1.5px 0px rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.repository button:hover {
+    background-color: #eee;
+}
+p.info > span {
+    padding: 5px;
+}
+p.info .lang-color {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red;
+}
+
+
+
+
+

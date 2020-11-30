@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav {
+        display: block;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        display: inline-block;
+        margin: 10px;
+        font-weight: 600;
+        border: none;
+    }
+    div.logo a {
+        margin: 0px;
+    }
+    .hide-desktop {
+        display: none;
+    }
+    .profile-container {
+        width: 25%;
+    }
+    .profile {
+        flex-direction: column;
+    }
+    .profile img {
+        width: 90%;
+        margin-top: -50px;
+        z-index: 2;
+    }
+    .repository-container {
+        width: 72%;
+    }
+    .profile-repo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .overview-menu.desktop {
+        padding-left: 300px;
+    }
+    
+    nav ul li label input:focus {
+        width: 300px;
+    }
+}
